@@ -1,0 +1,17 @@
+data:
+  path_to_chat: "chats/chat_{}/result.json"
+  number_of_chats: 7
+  actors:
+    - me
+    - you
+  dataset_name: "under-tree/dialogues"
+source_model:
+  name: "ai-forever/rugpt3small_based_on_gpt2"
+model:
+  name: "under-tree/mirody-decody"
+  special_tokens:
+    - "me: "
+    - "you: "
+  pad_token: "<|pad|>"
+train:
+  test_size: 0.1
